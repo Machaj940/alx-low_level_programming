@@ -4,7 +4,7 @@
  * Description: Prints "\"Programming is like building a multilingual puzzle"
  * char - Contains the string to be printed
  * int - returns 0 if false
- * return: 0
+ * Return: Always 0 (success)
  */
 /* Description: Returns string */
 int main(void)
