@@ -1,1 +1,0 @@
-This directory contains alx "hello world" project
