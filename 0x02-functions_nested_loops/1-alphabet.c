@@ -1,12 +1,13 @@
 #include "holberton.h"
 /**
+ * print the alphabet
  * Description: print the alphabet in lower case
  * Return: always 0(success)
  */
 
 void print_alphabet(void)
 {
-	int ch;
+	int (ch);
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
