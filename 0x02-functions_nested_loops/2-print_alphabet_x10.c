@@ -14,7 +14,10 @@ void print_alphabet_x10(void)
 		i++;
 	}
 }
-/* print_alphabet: function to print alphabet in lowercase*/
+/**
+ * print_alphabet - function to print alphabet in lowercase
+ * Description: print alphabet in lowercase and a new line
+ */
 void print_alphabet(void)
 {
 	int (ch);
