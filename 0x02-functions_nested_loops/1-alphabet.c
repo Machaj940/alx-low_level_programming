@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print the alphabet
+ * print_alphabet - function that prints the alphabet
  * Description: print the alphabet in lower case
  * Return: always 0(success)
  */
@@ -13,4 +13,5 @@ void print_alphabet(void)
 	{
 		_putchar(ch);
 	}
+	_putchar('\n');
 }
