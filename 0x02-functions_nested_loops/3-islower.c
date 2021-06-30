@@ -2,17 +2,17 @@
 /**
  * _islower - function to check for lowercase characters
  * Description: check for lowercase characters in a string
+ * @c: lowercase characters
  * Return: Always 0(success)
  */
 int _islower(int c)
 {
-	unsigned int g = 97;
-
-	if (g <= 122) {
+	if (c >= 97 && c <= 122)
+	{
 		return (1);
-		g++;
-	} else {
+	}
+	else
+	{
 		return (0);
-		g++;
 	}
 }
