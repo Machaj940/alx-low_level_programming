@@ -1,15 +1,10 @@
-#include"holberton.h"
+#include "holberton.h"
 /**
  * main - Prints Holberton
  * Description: Prints 'Holberton' using _putchar command
  * Return: Always 0 (success)
  */
 
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 int main(void)
 {
@@ -20,6 +15,7 @@ int main(void)
 	{
 		_putchar(c[i]);
 	}
+	_putchar('\n');
 
 	return (0);
 }
