@@ -2,8 +2,7 @@
 /**
  * print_alphabet_x10 - function to print the alphabet 10 times, in lowercase
  * Description: print the alphabet 10 times + a new line
- * print_alphabet - function to print the alphabet in lowercase
- * Description: print alphabet followed by a new line
+ * print_alphabet: function to print the alphabet in lowercase
  */
 void print_alphabet_x10(void)
 {
@@ -15,7 +14,7 @@ void print_alphabet_x10(void)
 		i++;
 	}
 }
-
+/* print_alphabet: function to print alphabet in lowercase*/
 void print_alphabet(void)
 {
 	int (ch);
