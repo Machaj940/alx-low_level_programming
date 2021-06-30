@@ -12,7 +12,6 @@ void print_alphabet_x10(void)
 		print_alphabet();
 		i++;
 	}
-	_putchar('\n');
 }
 
 void print_alphabet(void)
