@@ -1,13 +1,13 @@
 #include "holberton.h"
 /**
  * _abs - computes the absolute value of an integer
- * @int: any number
+ * @j: any number
  * Return: Always 0
  */
-int _abs(int)
+int _abs(int j)
 {
-	if (int < 0)
+	if (j < 0)
 	{
-		return ((-1) * int);
+		return ((-1) * j);
 	}
 }
