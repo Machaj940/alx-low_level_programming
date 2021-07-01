@@ -11,6 +11,6 @@ int _abs(int)
 
 	if (n < 0)
 	{
-		putchar(j);
+		_putchar(j);
 	}
 }
