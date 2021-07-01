@@ -1,17 +1,22 @@
 #include "holberton.h"
 /**
- * _abs - computes the absolute value of an integer
- * @int: any number
+ * print_last_digit - prints the last digit of any integer
+ * @j: any number
  *
  * Return: Always 0
  */
-int print_last_digit(int)
+int print_last_digit(int j)
 {
-	int n;
-	int j = n % 10;
-
-	if (n > 0 || n < 0 || n == 0)
+	if (j > 0)
 	{
-		putchar(j);
+		return (j % 10);
+	}
+	else if (j == 0)
+	{
+		return (j % 10);
+	}
+	else
+	{
+		return (j % 10);
 	}
 }
