@@ -1,15 +1,11 @@
 #include "holberton.h"
 /**
- * _add - adds any numbers
- * @n: any number
- * @j: any number
- *
+ * add - adds any numbers
+ * Description: add any numbers
+ * @int: any number
  * Return: Always 0
  */
 int add(int, int)
 {
-	int n;
-	int j;
-
-	return j+n;
+	return (int + int);
 }
