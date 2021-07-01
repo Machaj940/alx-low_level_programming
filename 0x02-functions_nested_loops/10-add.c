@@ -5,7 +5,7 @@
  * @int: any number
  * Return: Always 0
  */
-int add(int, int)
+int add(int i, int j)
 {
 	return (i + j);
 }
