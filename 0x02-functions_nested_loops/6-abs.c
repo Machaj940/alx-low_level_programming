@@ -11,5 +11,5 @@ int _abs(int j)
 		return ((-1) * j);
 	}
 
-	return (0);
+	return (1);
 }
