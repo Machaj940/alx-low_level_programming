@@ -9,19 +9,21 @@
 int main(void)
 {
 	int ch = 'a';
-	while (ch <= 'z')
+
+	do
 	{
-		while (ch == 'q')
+		if (ch == 'e')
 		{
+			ch++;
 			continue;
 		}
-		while (ch == 'e')
+		if (ch == 'q')
 		{
+			ch++;
 			continue;
 		}
 		putchar(ch);
 		ch++;
-	}
+	} while (ch <= 'z');
 	putchar('\n');
-	return (0);
 }
