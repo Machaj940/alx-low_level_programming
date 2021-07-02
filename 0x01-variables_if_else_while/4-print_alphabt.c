@@ -26,4 +26,5 @@ int main(void)
 		ch++;
 	} while (ch <= 'z');
 	putchar('\n');
+	return (0);
 }
