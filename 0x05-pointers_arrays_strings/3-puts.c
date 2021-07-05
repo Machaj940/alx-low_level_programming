@@ -6,7 +6,7 @@
  */
 int _puts(char *str)
 {
-	char str[];
+	int str[];
 
 	_putchar(str[]);
 	_putchar('\n');
