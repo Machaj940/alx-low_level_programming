@@ -21,7 +21,7 @@ void print_rev(char *s)
 
 /**
  * _strlen - return the length of a string
- * @c: a string
+ * @s: a string
  * Return: c
  */
 
