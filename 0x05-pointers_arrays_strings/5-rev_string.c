@@ -3,6 +3,7 @@
  * rev_string - function that reverses a string
  * @s: a string
  * _strlen: return the length of a string
+ * swap_int: swap the values of 2 integers
  * Return: str
  */
 void rev_string(char *s)
@@ -12,9 +13,9 @@ void rev_string(char *s)
 
 	len = _strlen(s);
 
-	for (i = len - 1; i >= 0; i--)
+	for (i = 0; i < len / 2; i++)
 	{
-		return (s[i]);
+		swap_int(s[i], s[len - i - 1]);
 	}
 }
 
@@ -31,4 +32,18 @@ int _strlen(char *s)
 	while (s[c] != '\0')
 		c++;
 	return (c);
+}
+
+/**
+ * swap_int - swaps the value of 2 integers
+ * @a: an int
+ * @b: an int
+ */
+void swap_int(int *a, int *b)
+{
+	int t;
+
+	t = *a;
+	*a = *b;
+	*b = t;
 }
