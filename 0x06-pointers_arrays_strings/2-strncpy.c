@@ -8,6 +8,9 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+	if ((dest == NULL) && (src == NULL))
+		return (NULL);
+
 	char *dest = dest;
 
 	while (*src && n--)
