@@ -3,37 +3,25 @@
  * _strcat - concatenates two strings
  * @dest: a string
  * @src: a string
- * Return: dest
+ * Return: str3
  */
 char *_strcat(char *dest, char *src)
 {
-	int len, j;
+	char *str3[];
+	int i = 0, j = 0;
 
-	len = 0;
-	len = _strlen(dest);
-
-	while (dest[len] != '\0')
+	while (dest[i] != '\0')
 	{
-		++len;
+		str3[j] = dest[i];
+		i++;
+		j++;
 	}
-	for (j = 0; src[j] != '\0'; ++j, ++len)
+	while (src[j] != '\0')
 	{
-		dest[len] = src[j];
+		str3[j] = src[j];
+		i++;
+		j++;
 	}
-	dest[len] = '\0';
-	_putchar(dest);
-}
-
-/**
- * _strlen - return the length of a string
- * @s: a string
- * Return: c
- */
-int _strlen(char *s)
-{
-	int c = 0;
-
-	while (s[c] != '\0')
-		c++;
-	return (c);
+	str3[j] = '\0';
+	_putchar(str3);
 }
