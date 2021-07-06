@@ -10,6 +10,7 @@ char *_strcat(char *dest, char *src)
 	int len, j;
 
 	len = 0;
+	len = _strlen(dest);
 
 	while (dest[len] != '\0')
 	{
@@ -21,4 +22,18 @@ char *_strcat(char *dest, char *src)
 	}
 	dest[len] = '\0';
 	_putchar(dest);
+}
+
+/**
+ * _strlen - return the length of a string
+ * @s: a string
+ * Return: c
+ */
+int _strlen(char *s)
+{
+	int c = 0;
+
+	while (s[c] != '\0')
+		c++;
+	return (c);
 }
