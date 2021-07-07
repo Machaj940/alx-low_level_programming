@@ -4,19 +4,18 @@
  * @dest: destination string
  * @src: source string
  * @n: number of chars to be appended to dest string
- * Return: str3
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0;
+	int i = 0, j = 0;
 
 	while (dest[i] != '\0')
 		i++;
-	while (n--)
+	for (j = 0; j < n; j++)
 	{
-		while (!(*dest++ = *src++))
-			return (dest);
+		dest[i] = src[j];
+		i++;
 	}
-	dest[i] = '\0';
 	return (dest);
 }
