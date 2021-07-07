@@ -1,22 +1,22 @@
 #include "holberton.h"
 /**
- * _strncat - concatenates two strings
- * @dest: string 1
- * @src: string 2
- * @n: max number of chars to be appended
- * Return: dest
+ * _strncat - concatenates two strings with strncat equivalent
+ * @dest: destination string
+ * @src: source string
+ * @n: number of chars to be appended to dest string
+ * Return: str3
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	while (dest != '\0')
-	{
-		dest++;
-	}
+	int i = 0;
+
+	while (dest[i] != '\0')
+		i++;
 	while (n--)
 	{
-		while (!(dest++ = *src++))
+		while (!(*dest++ = *src++))
 			return (dest);
 	}
-	dest = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
