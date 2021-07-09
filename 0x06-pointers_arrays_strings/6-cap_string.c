@@ -18,6 +18,15 @@ char *cap_string(char *s)
 				continue;
 			}
 		}
+		if (s[i] == ' ')
+		{
+			++i;
+			if (s[i] >= 'a' && s[i] <= 'z')
+			{
+				s[i] = s[i] - 32;
+				continue;
+			}
+		}
 		else
 		{
 			if (str[i] >= 'A' && str[i] <= 'Z')
