@@ -6,13 +6,12 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i;
+	int c, t;
 
-	if (n >= i)
+	for (c = 0; c < n / 2; c++)
 	{
-		return;
+		t = a[c];
+		a[c] = a[n - c - 1];
+		a[n - c - 1] = t;
 	}
-	int value = a[n];
-	reverse_array(a, n + i, i);
-	a[i - 1 -n] = value;
 }
