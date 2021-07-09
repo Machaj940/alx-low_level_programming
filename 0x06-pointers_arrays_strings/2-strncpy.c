@@ -8,13 +8,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	while (*src && n--)
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
+	while (n-- && (*dest++ = *src++));
 	dest = '\0';
-
 	return (dest);
 }
