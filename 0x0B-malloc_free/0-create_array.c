@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- * create_array - create an array of char and initialize it with a specific char
+ * create_array - create an array of chars and initialize it
+ * with a specific char
  * @size: size of array to be created
  * @c: char to initialize array with
  * Return: char to initialize array with or null if malloc fails
