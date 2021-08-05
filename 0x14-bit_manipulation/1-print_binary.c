@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 void print_b(unsigned long int n);
 /**
  * print_binary - prints the binary representation of a number
