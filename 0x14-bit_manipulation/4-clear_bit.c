@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * clear_bit - sete
- * @n: point
- * @index: ing
- * Return: 1 if
+ * clear_bit - sets the value of a bit to a given index
+ * @n: pointer to a number
+ * @index: index to switch
+ * Return: 1 if it worked or -1 if an error occured
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
