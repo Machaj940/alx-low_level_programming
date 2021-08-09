@@ -128,9 +128,12 @@ int write_to_file(char *buff, int to_fd, int read_chars, char *f_to)
 
 	for (i = 0; i < read_chars; i++)
 	{
-		dprintf(STDERR_FILENO,
-			"Error: Can't write to %s\n", f_to);
-		exit(99);
+		if (write(to_fd, &buff[i], 1) == -1)
+		{
+			dprintf(STDERR_FILENO,
+				"Error: Can't write to %s\n", f_to);
+			exit(99);
+		}
 	}
 	return (0);
 }
