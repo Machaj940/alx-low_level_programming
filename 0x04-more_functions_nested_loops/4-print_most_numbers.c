@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * print_most_numbers - function to print 0-9 excluding 2 & 4
  *
@@ -6,16 +6,14 @@
  */
 void print_most_numbers(void)
 {
-	int nu = 0;
+	char i;
 
-	while (nu <= '9')
+	for (i = '0'; i <= '9'; i++)
 	{
-		if (nu == 2)
-			continue;
-		if (nu == 4)
-			continue;
-		_putchar(nu);
-		nu++;
+		if (i != '2' && i != '4')
+		{
+			_putchar(i);
+		}
 	}
 	_putchar('\n');
 }
