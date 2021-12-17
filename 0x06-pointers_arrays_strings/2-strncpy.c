@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * _strncpy - copy first n char of src to dest
  * @dest: destination string
@@ -8,14 +8,18 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *ptr = dest;
+	int i, j, k;
 
-	while (*src && n--)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
 	}
-	*dest = '\0';
-	return (ptr);
+	for (j = 0; j < n; j++)
+	{
+		dest[j] = src [j];
+	}
+	for (k = j; k != i; k++)
+	{
+		dest[k] = dest[k];
+	}
+	return (dest);
 }
