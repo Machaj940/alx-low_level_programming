@@ -3,7 +3,7 @@
 
 /**
  * free_listint - free a linked list
- * @head - pointer to the first node of linked list
+ * @head: pointer to the first node of linked list
  * Return: void
  */
 
