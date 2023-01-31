@@ -10,15 +10,13 @@ int main(void)
 {
 	int (ch);
 	int (CH);
-	for (ch = 'a'; ch <= 'z';)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
-		ch++;
 	}
-	for (CH = 'A'; CH <= 'Z';)
+	for (CH = 'A'; CH <= 'Z'; CH++)
 	{
 		putchar(CH);
-		CH++;
 	}
 	putchar('\n');
 	return (0);
